@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_color"
+    tools:context=".GraduationFragment">
+
+    <FrameLayout
+        android:id="@+id/rectangle_container"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="380dp"
+        android:background="@drawable/tup_content"
+        android:layout_marginBottom="160dp">
+
+        <!-- School Year -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="School Year:"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="110dp"
+            android:importantForAutofill="no"
+            android:hint="SY"
+            android:text="2324"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_gray"
+            android:textSize="15sp"
+            android:background="@drawable/menu_input"
+            android:padding="15dp"
+            android:inputType="text" />
+
+        <!-- Select Month -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Month:"
+            android:layout_marginTop="125dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/select_month"
+            android:padding="15dp"
+            android:background="@drawable/menu_input" />
+
+        <Button
+            android:id="@+id/print_button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="@color/tup_color"
+            android:padding="12dp"
+            android:text="Print out"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/curr_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Current Date"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"/>
+
+</FrameLayout>

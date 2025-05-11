@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/content_color"
+    tools:context=".GraduationFragment">
+
+    <FrameLayout
+        android:id="@+id/rectangle_container"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="340dp"
+        android:background="@drawable/tup_content"
+        android:layout_marginBottom="160dp">
+
+        <!-- School Year -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="School Year:"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Semester -->
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/select_sy"
+            android:padding="15dp"
+            android:background="@drawable/menu_input" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester:"
+            android:layout_marginTop="135dp"
+            android:layout_marginStart="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <!-- Semester -->
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:id="@+id/select_sem"
+            android:padding="15dp"
+            android:background="@drawable/menu_input" />
+
+        <TextView
+            android:id="@+id/faculty_closed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Faculty Evaluation Period is closed."
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/curr_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Current Date"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+</FrameLayout>
