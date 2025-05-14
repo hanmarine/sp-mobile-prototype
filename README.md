@@ -1,5 +1,9 @@
 # Student Portal Mobile Application
 
+<img src="https://github.com/hanmarine/sp-mobile-prototype/blob/main/screenshots/main.png" width="40%"/>
+
+---
+
 ### Tools used:
 <ul>
   <li>Kotlin
